@@ -1,5 +1,5 @@
 .header {
-  padding: 93px 51px 90px;
+  padding: 78px 51px 90px;
   display: grid;
   grid-template-columns: 1fr 140px 1fr;
   align-items: center;
@@ -28,7 +28,7 @@
   list-style: circle;
 }
 
-.header__link__logo-image {
+.header__logo-link {
   width: min-content;
   height: min-content;
   display: block;
@@ -233,14 +233,14 @@
   padding-top: 2px;
 }
 
-.about__right__column__title {
-  grid-area: about__right__column__title;
+.about__title-wrapper {
+  grid-area: about__title-wrapper;
   align-self: center;
   padding-top: 8px;
 }
 
-.about__text__block {
-  grid-area: about__text__block;
+.about__text-block {
+  grid-area: about__text-block;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -251,9 +251,9 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
-    "about__logo about__right__column__title ."
-    "about__logo about__text__block about__text__block"
-    ".           about__text__block about__text__block";
+    'about__logo about__title-wrapper .'
+    'about__logo about__text-block about__text-block'
+    '.           about__text-block about__text-block';
   column-gap: 25px;
   padding-top: 35px;
   padding-left: 27px;
